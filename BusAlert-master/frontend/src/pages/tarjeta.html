@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarjeta Yo Voy</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      width: 400px;
+      height: 220px;
+      border-radius: 16px;
+      background: #2f2d74;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .border-deco {
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      background-image: repeating-linear-gradient(
+        135deg,
+        #7a6ef7 0,
+        #7a6ef7 10px,
+        transparent 10px,
+        transparent 20px
+      );
+    }
+
+    .border-deco.top {
+      top: 0;
+    }
+
+    .border-deco.bottom {
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+    }
+
+    .header img {
+      width: 30px; /* Ajusta el tamaño del logo */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .soluciones {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .soluciones span {
+      position: relative;
+      display: inline-block;
+    }
+
+    .soluciones .l::after,
+    .soluciones .i::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      transform: translateX(-50%);
+      width: 18px;
+      height: 3px;
+      background: linear-gradient(to right, red, yellow, blue);
+    }
+    
+    .yovoy {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(150deg,yellow, purple, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="border-deco top"></div>
+
+    <div class="header">
+      <div style="display: flex; align-items: center;">
+        <img src="https://seeklogo.com/images/E/escudo-del-estado-de-aguascalientes-logo-71B8D64F73-seeklogo.com.png" alt="Logo Aguascalientes"> <!-- Aquí va el logo -->
+        <div>
+        <strong>Aguascalientes</strong><br>
+        Gente de trabajo
+    </div>
+      </div>
+      <div style="text-align: center;">
+        <strong>GOBIERNO DEL ESTADO<br>DE AGUASCALIENTES</strong>
+      </div>
+      <div style="text-align: right;">
+        El<br><strong>gigante</strong><br>de México
+      </div>
+    </div>
+
+    <div class="soluciones">
+      SO<span class="l">L</span>UC<span class="i">I</span>ONES
+    </div>
+
+    <div class="yovoy">YOVOY</div>
+
+    <div class="border-deco bottom"></div>
+  </div>
+</body>
+</html>

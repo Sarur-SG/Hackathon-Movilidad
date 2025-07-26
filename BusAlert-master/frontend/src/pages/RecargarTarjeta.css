@@ -1,0 +1,235 @@
+.recarga-div {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(211, 222, 226, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+.recarga{
+    font-family: "Georgia", serif;
+}
+  
+  .recarga-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .botton-recarga {
+    font-family: "Georgia", serif;
+    background: #d6a9d6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .botton-recarga:hover {
+    background: #0056b3;
+  }
+  
+  .tarjeta-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .tarjeta {
+    width: 320px; 
+    min-height: 200px; 
+    background: linear-gradient(135deg, #330099, #33ccff);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .metodo-pago, .monto-recarga {
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; 
+    display: block; 
+    margin-bottom: 8px; 
+  }
+  
+  .metodo-pago {
+    color: #007bff; 
+  }
+  
+  .monto-recarga  {
+    font-family: "Georgia", serif;
+    color: #28a745;
+  }
+
+  .oxxo {
+    background-image: url('../images/oxxo.png');
+    background-color: #ff5733; 
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tarjeta-value {
+    background-image: url('../images/tarjeta.png');
+    background-color: #1e57b3; 
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nfc {
+    background-image: url('../images/nfc.png');
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+  }
+  
+
+  .tarjeta-trasera {
+    background: linear-gradient(135deg, #7c5cab, #4b6584); 
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 180px;
+    position: relative;
+  }
+  
+  .tarjeta-trasera::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: black;
+  }
+  
+
+  .codigo-seguridad {
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    width: 50px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    .custom-select {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.selected-option {
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-select:hover .options {
+  display: block;
+}
+
+.option {
+  padding: 10px;
+}
+  }
+
+  .metodo-pago-container {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .metodo-pago-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .metodo-pago-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .metodo-pago-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  
+  .metodo-pago-item p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .metodo-pago-item:hover,
+  .metodo-pago-item.selected {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .botton-recarga:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
+  
+  
